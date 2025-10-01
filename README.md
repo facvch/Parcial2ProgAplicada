@@ -7,4 +7,4 @@ Otras cosas que añade/modifica son:
   - Un IServiceCollection AddSqliteRepositories.
   - Y un repositorio especial para sqlite, con su StoreDbContext y StoreDbContextFactory correspondientes.
 
-![alt text]([https://billiken.lat/wp-content/uploads/2025/04/dt-23.jpg])
+![alt text](https://billiken.lat/wp-content/uploads/2025/04/dt-23.jpg)
