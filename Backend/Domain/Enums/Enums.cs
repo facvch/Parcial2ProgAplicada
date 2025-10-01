@@ -21,7 +21,8 @@
             MYSQL,
             MARIADB,
             SQLSERVER, 
-            MONGODB
+            MONGODB,
+            sqlite
         }
     }
 }

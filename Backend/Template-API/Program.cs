@@ -1,5 +1,6 @@
-using Infrastructure.Repositories.Sql;
+using Infrastructure.Repositories.Sqlite;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Storage;
 using Microsoft.Extensions.Hosting;
 
 
@@ -15,14 +16,16 @@ namespace API
             {
                 var host = CreateHostBuilder(args).Build();
 
-                // *** CÓDIGO CORREGIDO ***
                 using (var scope = host.Services.CreateScope())
                 {
                     var services = scope.ServiceProvider;
                     try
                     {
                         var context = services.GetRequiredService<StoreDbContext>();
+                        if (context.Database.IsRelational()) {
                         context.Database.Migrate(); // Esto aplica las migraciones automáticamente
+                    }
+
                     }
                     catch (Exception ex)
                     {
@@ -30,15 +33,14 @@ namespace API
                         logger.LogError(ex, "Ocurrió un error al aplicar las migraciones");
                     }
                 }
-                // *** FIN DEL CÓDIGO ***
 
-                host.Run(); //  TE FALTABA ESTA LÍNEA
+                host.Run(); 
             }
 
             public static IHostBuilder CreateHostBuilder(string[] args) =>
                 Host.CreateDefaultBuilder(args)
                     .ConfigureWebHostDefaults(config => {
-                        config.UseStartup<Startup>(); //  CORREGIDO: "UseStartup" no "UssStartupsStartup"
+                        config.UseStartup<Startup>();
                     });
         }
     }

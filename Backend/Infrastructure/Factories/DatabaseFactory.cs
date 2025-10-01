@@ -17,6 +17,9 @@ namespace Infrastructure.Factories
             {
                 case DatabaseType.MYSQL:
                 case DatabaseType.MARIADB:
+                case DatabaseType.sqlite:
+                    services.AddSqliteRepositories(configuration);
+                    break;
                 case DatabaseType.SQLSERVER:
                     services.AddSqlServerRepositories(configuration);
                     break;
@@ -26,6 +29,20 @@ namespace Infrastructure.Factories
                 default:
                     throw new NotSupportedException(InfrastructureConstants.DATABASE_TYPE_NOT_SUPPORTED);
             }
+        }
+
+        private static IServiceCollection AddSqliteRepositories(this IServiceCollection services, IConfiguration configuration)
+        {
+            services.AddDbContext<Repositories.Sql.StoreDbContext>(options =>
+            {
+                options.UseSqlite(configuration.GetConnectionString("DefaultConnection"));
+            }, ServiceLifetime.Scoped);
+
+            /* Sqlite Repositories (usa los mismos que SQL porque es EF Core) */
+            services.AddTransient<IDummyEntityRepository, Repositories.Sql.DummyEntityRepository>();
+            services.AddTransient<IAlumnoRepository, Repositories.Sql.AlumnoRepository>();
+
+            return services;
         }
 
         private static IServiceCollection AddSqlServerRepositories(this IServiceCollection services, IConfiguration configuration)

@@ -4,7 +4,7 @@ using AutoMapper;
 using Core.Application;
 using Filters;
 using Infrastructure.Registrations;
-using Infrastructure.Repositories.Sql;
+using Infrastructure.Repositories.Sqlite;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -34,7 +34,7 @@ namespace API
                 options.ReportApiVersions = true;
             });
 
-            services.AddDbContext<StoreDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<StoreDbContext>(options => options.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
            
             services.AddSwaggerGen(c =>
             {
@@ -59,7 +59,7 @@ namespace API
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
-            if (env.IsDevelopment())
+            if (env.IsDevelopment() || env.IsProduction())
             {
                 app.UseDeveloperExceptionPage();
 

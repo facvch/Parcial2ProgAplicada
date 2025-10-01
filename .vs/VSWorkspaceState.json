@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Backend",
+    "\\Backend\\Domain",
+    "\\Backend\\Domain\\Enums",
+    "\\Backend\\Infrastructure",
+    "\\Backend\\Infrastructure\\Constants",
+    "\\Backend\\Infrastructure\\Factories",
+    "\\Backend\\Infrastructure\\Repositories",
+    "\\Backend\\Infrastructure\\Repositories\\Sqlite",
+    "\\Backend\\Template-API"
+  ],
+  "SelectedNode": "\\Backend\\Infrastructure\\Constants\\Constants.cs",
+  "PreviewInSolutionExplorer": false
+}
