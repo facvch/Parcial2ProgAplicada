@@ -17,7 +17,7 @@ namespace Infrastructure.Repositories.Sql
             {
                 var optionsBuilder = new DbContextOptionsBuilder<StoreDbContext>();
 
-                // ⚠️ Asegurate de poner tu connection string real acá
+                //
                 optionsBuilder.UseSqlServer(
                        "Server=(localdb)\\MSSQLLocalDB;Database=ParcialDB;Trusted_Connection=true;TrustServerCertificate=true");
 

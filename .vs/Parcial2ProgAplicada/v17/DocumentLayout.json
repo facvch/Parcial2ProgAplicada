@@ -1,37 +1,37 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\facul\\source\\repos\\GitHub\\Parcial2ProgAplicada\\",
+  "WorkspaceRootPath": "C:\\Users\\Facu\\Documents\\GitHub\\Parcial2ProgAplicada\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\facul\\source\\repos\\GitHub\\Parcial2ProgAplicada\\Backend\\Template-API\\Startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Facu\\Documents\\GitHub\\Parcial2ProgAplicada\\Backend\\Template-API\\Startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Backend\\Template-API\\Startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\facul\\source\\repos\\GitHub\\Parcial2ProgAplicada\\Backend\\Infrastructure\\Factories\\DatabaseFactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Backend\\Infrastructure\\Factories\\DatabaseFactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\facul\\source\\repos\\GitHub\\Parcial2ProgAplicada\\Backend\\Domain\\Enums\\Enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Backend\\Domain\\Enums\\Enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\facul\\source\\repos\\GitHub\\Parcial2ProgAplicada\\Backend\\Domain\\Others\\Utils\\EnumUtils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Backend\\Domain\\Others\\Utils\\EnumUtils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\facul\\source\\repos\\GitHub\\Parcial2ProgAplicada\\Backend\\Template-API\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Backend\\Template-API\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\facul\\source\\repos\\GitHub\\Parcial2ProgAplicada\\Backend\\Template-API\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Backend\\Template-API\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\facul\\source\\repos\\GitHub\\Parcial2ProgAplicada\\Backend\\Infrastructure\\Repositories\\Sqlite\\StoreDbContextFactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Facu\\Documents\\GitHub\\Parcial2ProgAplicada\\Backend\\Infrastructure\\Repositories\\Sqlite\\StoreDbContextFactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Backend\\Infrastructure\\Repositories\\Sqlite\\StoreDbContextFactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\facul\\source\\repos\\GitHub\\Parcial2ProgAplicada\\Backend\\Infrastructure\\Repositories\\Sqlite\\StoreDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Facu\\Documents\\GitHub\\Parcial2ProgAplicada\\Backend\\Infrastructure\\Repositories\\Sql\\StoreDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Backend\\Infrastructure\\Repositories\\Sql\\StoreDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Facu\\Documents\\GitHub\\Parcial2ProgAplicada\\Backend\\Template-API\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Backend\\Template-API\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Facu\\Documents\\GitHub\\Parcial2ProgAplicada\\Backend\\Infrastructure\\Factories\\DatabaseFactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Backend\\Infrastructure\\Factories\\DatabaseFactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Facu\\Documents\\GitHub\\Parcial2ProgAplicada\\Backend\\Domain\\Enums\\Enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Backend\\Domain\\Enums\\Enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Facu\\Documents\\GitHub\\Parcial2ProgAplicada\\Backend\\Domain\\Others\\Utils\\EnumUtils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Backend\\Domain\\Others\\Utils\\EnumUtils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Facu\\Documents\\GitHub\\Parcial2ProgAplicada\\Backend\\Infrastructure\\Repositories\\Sqlite\\StoreDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Backend\\Infrastructure\\Repositories\\Sqlite\\StoreDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -42,41 +42,67 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DatabaseFactory.cs",
-              "DocumentMoniker": "C:\\Users\\facul\\source\\repos\\GitHub\\Parcial2ProgAplicada\\Backend\\Infrastructure\\Factories\\DatabaseFactory.cs",
-              "RelativeDocumentMoniker": "Backend\\Infrastructure\\Factories\\DatabaseFactory.cs",
-              "ToolTip": "C:\\Users\\facul\\source\\repos\\GitHub\\Parcial2ProgAplicada\\Backend\\Infrastructure\\Factories\\DatabaseFactory.cs",
-              "RelativeToolTip": "Backend\\Infrastructure\\Factories\\DatabaseFactory.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAC0AAAAJAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "StoreDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Facu\\Documents\\GitHub\\Parcial2ProgAplicada\\Backend\\Infrastructure\\Repositories\\Sql\\StoreDbContext.cs",
+              "RelativeDocumentMoniker": "Backend\\Infrastructure\\Repositories\\Sql\\StoreDbContext.cs",
+              "ToolTip": "C:\\Users\\Facu\\Documents\\GitHub\\Parcial2ProgAplicada\\Backend\\Infrastructure\\Repositories\\Sql\\StoreDbContext.cs",
+              "RelativeToolTip": "Backend\\Infrastructure\\Repositories\\Sql\\StoreDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T05:08:55.173Z",
+              "WhenOpened": "2025-10-02T18:46:20.902Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Enums.cs",
-              "DocumentMoniker": "C:\\Users\\facul\\source\\repos\\GitHub\\Parcial2ProgAplicada\\Backend\\Domain\\Enums\\Enums.cs",
-              "RelativeDocumentMoniker": "Backend\\Domain\\Enums\\Enums.cs",
-              "ToolTip": "C:\\Users\\facul\\source\\repos\\GitHub\\Parcial2ProgAplicada\\Backend\\Domain\\Enums\\Enums.cs",
-              "RelativeToolTip": "Backend\\Domain\\Enums\\Enums.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "StoreDbContextFactory.cs",
+              "DocumentMoniker": "C:\\Users\\Facu\\Documents\\GitHub\\Parcial2ProgAplicada\\Backend\\Infrastructure\\Repositories\\Sqlite\\StoreDbContextFactory.cs",
+              "RelativeDocumentMoniker": "Backend\\Infrastructure\\Repositories\\Sqlite\\StoreDbContextFactory.cs",
+              "ToolTip": "C:\\Users\\Facu\\Documents\\GitHub\\Parcial2ProgAplicada\\Backend\\Infrastructure\\Repositories\\Sqlite\\StoreDbContextFactory.cs",
+              "RelativeToolTip": "Backend\\Infrastructure\\Repositories\\Sqlite\\StoreDbContextFactory.cs",
+              "ViewState": "AgIAAAQAAACgAQAAAAAhwBIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T05:08:37.665Z",
+              "WhenOpened": "2025-10-01T04:35:59.924Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\Users\\Facu\\Documents\\GitHub\\Parcial2ProgAplicada\\Backend\\Template-API\\Startup.cs",
+              "RelativeDocumentMoniker": "Backend\\Template-API\\Startup.cs",
+              "ToolTip": "C:\\Users\\Facu\\Documents\\GitHub\\Parcial2ProgAplicada\\Backend\\Template-API\\Startup.cs",
+              "RelativeToolTip": "Backend\\Template-API\\Startup.cs",
+              "ViewState": "AgIAAAgAAADA/v////8gwCcAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T04:05:14.648Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Facu\\Documents\\GitHub\\Parcial2ProgAplicada\\Backend\\Template-API\\appsettings.json",
+              "RelativeDocumentMoniker": "Backend\\Template-API\\appsettings.json",
+              "ToolTip": "C:\\Users\\Facu\\Documents\\GitHub\\Parcial2ProgAplicada\\Backend\\Template-API\\appsettings.json",
+              "RelativeToolTip": "Backend\\Template-API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-01T04:05:12.133Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "EnumUtils.cs",
-              "DocumentMoniker": "C:\\Users\\facul\\source\\repos\\GitHub\\Parcial2ProgAplicada\\Backend\\Domain\\Others\\Utils\\EnumUtils.cs",
+              "DocumentMoniker": "C:\\Users\\Facu\\Documents\\GitHub\\Parcial2ProgAplicada\\Backend\\Domain\\Others\\Utils\\EnumUtils.cs",
               "RelativeDocumentMoniker": "Backend\\Domain\\Others\\Utils\\EnumUtils.cs",
-              "ToolTip": "C:\\Users\\facul\\source\\repos\\GitHub\\Parcial2ProgAplicada\\Backend\\Domain\\Others\\Utils\\EnumUtils.cs",
+              "ToolTip": "C:\\Users\\Facu\\Documents\\GitHub\\Parcial2ProgAplicada\\Backend\\Domain\\Others\\Utils\\EnumUtils.cs",
               "RelativeToolTip": "Backend\\Domain\\Others\\Utils\\EnumUtils.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -85,64 +111,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "StoreDbContextFactory.cs",
-              "DocumentMoniker": "C:\\Users\\facul\\source\\repos\\GitHub\\Parcial2ProgAplicada\\Backend\\Infrastructure\\Repositories\\Sqlite\\StoreDbContextFactory.cs",
-              "RelativeDocumentMoniker": "Backend\\Infrastructure\\Repositories\\Sqlite\\StoreDbContextFactory.cs",
-              "ToolTip": "C:\\Users\\facul\\source\\repos\\GitHub\\Parcial2ProgAplicada\\Backend\\Infrastructure\\Repositories\\Sqlite\\StoreDbContextFactory.cs",
-              "RelativeToolTip": "Backend\\Infrastructure\\Repositories\\Sqlite\\StoreDbContextFactory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T04:35:59.924Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "StoreDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\facul\\source\\repos\\GitHub\\Parcial2ProgAplicada\\Backend\\Infrastructure\\Repositories\\Sqlite\\StoreDbContext.cs",
-              "RelativeDocumentMoniker": "Backend\\Infrastructure\\Repositories\\Sqlite\\StoreDbContext.cs",
-              "ToolTip": "C:\\Users\\facul\\source\\repos\\GitHub\\Parcial2ProgAplicada\\Backend\\Infrastructure\\Repositories\\Sqlite\\StoreDbContext.cs",
-              "RelativeToolTip": "Backend\\Infrastructure\\Repositories\\Sqlite\\StoreDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T04:35:58.936Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\facul\\source\\repos\\GitHub\\Parcial2ProgAplicada\\Backend\\Template-API\\Program.cs",
-              "RelativeDocumentMoniker": "Backend\\Template-API\\Program.cs",
-              "ToolTip": "C:\\Users\\facul\\source\\repos\\GitHub\\Parcial2ProgAplicada\\Backend\\Template-API\\Program.cs",
-              "RelativeToolTip": "Backend\\Template-API\\Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Title": "Enums.cs",
+              "DocumentMoniker": "C:\\Users\\Facu\\Documents\\GitHub\\Parcial2ProgAplicada\\Backend\\Domain\\Enums\\Enums.cs",
+              "RelativeDocumentMoniker": "Backend\\Domain\\Enums\\Enums.cs",
+              "ToolTip": "C:\\Users\\Facu\\Documents\\GitHub\\Parcial2ProgAplicada\\Backend\\Domain\\Enums\\Enums.cs",
+              "RelativeToolTip": "Backend\\Domain\\Enums\\Enums.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T04:07:46.032Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Startup.cs",
-              "DocumentMoniker": "C:\\Users\\facul\\source\\repos\\GitHub\\Parcial2ProgAplicada\\Backend\\Template-API\\Startup.cs",
-              "RelativeDocumentMoniker": "Backend\\Template-API\\Startup.cs",
-              "ToolTip": "C:\\Users\\facul\\source\\repos\\GitHub\\Parcial2ProgAplicada\\Backend\\Template-API\\Startup.cs",
-              "RelativeToolTip": "Backend\\Template-API\\Startup.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAAAD0AAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-01T04:05:14.648Z",
+              "WhenOpened": "2025-10-01T05:08:37.665Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\facul\\source\\repos\\GitHub\\Parcial2ProgAplicada\\Backend\\Template-API\\appsettings.json",
-              "RelativeDocumentMoniker": "Backend\\Template-API\\appsettings.json",
-              "ToolTip": "C:\\Users\\facul\\source\\repos\\GitHub\\Parcial2ProgAplicada\\Backend\\Template-API\\appsettings.json",
-              "RelativeToolTip": "Backend\\Template-API\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-01T04:05:12.133Z",
+              "Title": "DatabaseFactory.cs",
+              "DocumentMoniker": "C:\\Users\\Facu\\Documents\\GitHub\\Parcial2ProgAplicada\\Backend\\Infrastructure\\Factories\\DatabaseFactory.cs",
+              "RelativeDocumentMoniker": "Backend\\Infrastructure\\Factories\\DatabaseFactory.cs",
+              "ToolTip": "C:\\Users\\Facu\\Documents\\GitHub\\Parcial2ProgAplicada\\Backend\\Infrastructure\\Factories\\DatabaseFactory.cs",
+              "RelativeToolTip": "Backend\\Infrastructure\\Factories\\DatabaseFactory.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAC0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T05:08:55.173Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "StoreDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Facu\\Documents\\GitHub\\Parcial2ProgAplicada\\Backend\\Infrastructure\\Repositories\\Sqlite\\StoreDbContext.cs",
+              "RelativeDocumentMoniker": "Backend\\Infrastructure\\Repositories\\Sqlite\\StoreDbContext.cs",
+              "ToolTip": "C:\\Users\\Facu\\Documents\\GitHub\\Parcial2ProgAplicada\\Backend\\Infrastructure\\Repositories\\Sqlite\\StoreDbContext.cs",
+              "RelativeToolTip": "Backend\\Infrastructure\\Repositories\\Sqlite\\StoreDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T04:35:58.936Z",
               "EditorCaption": ""
             }
           ]

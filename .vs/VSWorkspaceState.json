@@ -2,15 +2,16 @@
   "ExpandedNodes": [
     "",
     "\\Backend",
-    "\\Backend\\Domain",
-    "\\Backend\\Domain\\Enums",
+    "\\Backend\\Application",
+    "\\Backend\\Application\\UseCases",
+    "\\Backend\\Application\\UseCases\\Automovil",
+    "\\Backend\\Application\\UseCases\\Automovil\\Commands",
+    "\\Backend\\Application\\UseCases\\Automovil\\Commands\\UpdateAutomovil",
     "\\Backend\\Infrastructure",
-    "\\Backend\\Infrastructure\\Constants",
-    "\\Backend\\Infrastructure\\Factories",
+    "\\Backend\\Infrastructure\\Registrations",
     "\\Backend\\Infrastructure\\Repositories",
-    "\\Backend\\Infrastructure\\Repositories\\Sqlite",
-    "\\Backend\\Template-API"
+    "\\Backend\\Infrastructure\\Repositories\\Sql"
   ],
-  "SelectedNode": "\\Backend\\Infrastructure\\Constants\\Constants.cs",
+  "SelectedNode": "\\Backend\\Application\\UseCases\\Automovil\\Commands\\CrearAutomovil\\CrearAutomovilHandler.cs",
   "PreviewInSolutionExplorer": false
 }

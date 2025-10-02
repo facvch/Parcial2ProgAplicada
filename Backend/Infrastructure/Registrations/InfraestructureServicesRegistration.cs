@@ -27,7 +27,7 @@ namespace Infrastructure.Registrations
             /* EventBus */
             services.AddEventBus(configuration);
 
-            // *** CORREGIDO ***
+            /* Repository */
             services.AddTransient<IAutomovilRepository, AutomovilRepository>();
 
             /* Adapters */

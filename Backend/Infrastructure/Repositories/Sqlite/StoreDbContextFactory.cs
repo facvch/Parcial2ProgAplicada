@@ -17,7 +17,6 @@ namespace Infrastructure.Repositories.Sqlite
             {
                 var optionsBuilder = new DbContextOptionsBuilder<StoreDbContext>();
 
-                // ⚠️ Connection string SQLite
                 optionsBuilder.UseSqlite("Data Source=ParcialDB.db");
 
                 return new StoreDbContext(optionsBuilder.Options);

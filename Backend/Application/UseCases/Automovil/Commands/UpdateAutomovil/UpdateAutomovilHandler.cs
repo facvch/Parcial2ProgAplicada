@@ -32,18 +32,8 @@ namespace Application.UseCases.Automovil.Commands.UpdateAutomovil
                 throw new InvalidOperationException($"Ya existe otro automóvil con el número de motor: {request.NumeroMotor}");
             }
 
-            var otroConMismoChasis = await _repository.GetByChasisAsync(request.NumeroChasis);
-            if (otroConMismoChasis != null && otroConMismoChasis.Id != request.Id)
-            {
-                throw new InvalidOperationException($"Ya existe otro automóvil con el número de chasis: {request.NumeroChasis}");
-            }
-
-            automovilExistente.Marca = request.Marca;
-            automovilExistente.Modelo = request.Modelo;
             automovilExistente.Color = request.Color;
-            automovilExistente.Fabricacion = request.Fabricacion;
             automovilExistente.NumeroMotor = request.NumeroMotor;
-            automovilExistente.NumeroChasis = request.NumeroChasis;
 
             await _repository.UpdateAsync(automovilExistente);
             return true;
