@@ -26,14 +26,21 @@ namespace Application.UseCases.Automovil.Commands.UpdateAutomovil
                 return false;
             }
 
-            var otroConMismoMotor = await _repository.GetByMotorAsync(request.NumeroMotor);
-            if (otroConMismoMotor != null && otroConMismoMotor.Id != request.Id)
+            if (!string.IsNullOrWhiteSpace(request.NumeroMotor))
             {
-                throw new InvalidOperationException($"Ya existe otro automóvil con el número de motor: {request.NumeroMotor}");
+                var otroConMismoMotor = await _repository.GetByMotorAsync(request.NumeroMotor);
+                if (otroConMismoMotor != null && otroConMismoMotor.Id != request.Id)
+                {
+                    throw new InvalidOperationException($"Ya existe otro automóvil con el número de motor: {request.NumeroMotor}");
+                }
+
+                automovilExistente.NumeroMotor = request.NumeroMotor;
             }
 
-            automovilExistente.Color = request.Color;
-            automovilExistente.NumeroMotor = request.NumeroMotor;
+            if (!string.IsNullOrWhiteSpace(request.Color))
+            {
+                automovilExistente.Color = request.Color;
+            }
 
             await _repository.UpdateAsync(automovilExistente);
             return true;

@@ -8,10 +8,11 @@
     "\\Backend\\Application\\UseCases\\Automovil\\Commands",
     "\\Backend\\Application\\UseCases\\Automovil\\Commands\\UpdateAutomovil",
     "\\Backend\\Infrastructure",
+    "\\Backend\\Infrastructure\\Extensions",
     "\\Backend\\Infrastructure\\Registrations",
     "\\Backend\\Infrastructure\\Repositories",
     "\\Backend\\Infrastructure\\Repositories\\Sql"
   ],
-  "SelectedNode": "\\Backend\\Application\\UseCases\\Automovil\\Commands\\CrearAutomovil\\CrearAutomovilHandler.cs",
+  "SelectedNode": "\\Backend\\HybridDDDArchitecture.sln",
   "PreviewInSolutionExplorer": false
 }

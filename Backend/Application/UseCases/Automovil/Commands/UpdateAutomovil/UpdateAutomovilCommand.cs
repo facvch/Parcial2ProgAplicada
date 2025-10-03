@@ -15,7 +15,7 @@ namespace Application.UseCases.Automovil.Commands.UpdateAutomovil
         [JsonIgnore]
         public int Id { get; set; }
 
-        public string Color { get; set; } 
-        public string NumeroMotor { get; set; } 
+        public string? Color { get; set; } 
+        public string? NumeroMotor { get; set; } 
     }
 }

@@ -17,7 +17,7 @@ namespace Infrastructure.Factories
             {
                 case DatabaseType.MYSQL:
                 case DatabaseType.MARIADB:
-                case DatabaseType.sqlite:
+                case DatabaseType.SQLITE:
                     services.AddSqliteRepositories(configuration);
                     break;
                 case DatabaseType.SQLSERVER:
@@ -38,7 +38,7 @@ namespace Infrastructure.Factories
                 options.UseSqlite(configuration.GetConnectionString("DefaultConnection"));
             }, ServiceLifetime.Scoped);
 
-            /* Sqlite Repositories (usa los mismos que SQL porque es EF Core) */
+            // Sqlite Repositories (usa los mismos que SQL porque es EF Core)
             services.AddTransient<IDummyEntityRepository, Repositories.Sql.DummyEntityRepository>();
             services.AddTransient<IAlumnoRepository, Repositories.Sql.AlumnoRepository>();
 
@@ -56,7 +56,7 @@ namespace Infrastructure.Factories
             //var context = services.BuildServiceProvider().GetRequiredService<Repositories.Sql.StoreDbContext>();
             //context.Database.Migrate();
 
-            /* Sql Repositories */
+            // Sql Repositories
             services.AddTransient<IDummyEntityRepository, Repositories.Sql.DummyEntityRepository>();
             services.AddTransient<IAlumnoRepository, Repositories.Sql.AlumnoRepository>();
 
@@ -70,7 +70,7 @@ namespace Infrastructure.Factories
             Repositories.Mongo.StoreDbContext db = new(configuration.GetConnectionString("MongoConnection") ?? throw new NullReferenceException());
             services.AddSingleton(typeof(Repositories.Mongo.StoreDbContext), db);
 
-            /* MongoDb Repositories */
+            // MongoDb Repositories
             services.AddTransient<IDummyEntityRepository, Repositories.Mongo.DummyEntityRepository>();
 
             return services;

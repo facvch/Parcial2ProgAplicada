@@ -22,7 +22,7 @@
             MARIADB,
             SQLSERVER, 
             MONGODB,
-            sqlite
+            SQLITE
         }
     }
 }

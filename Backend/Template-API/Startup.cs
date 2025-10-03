@@ -4,6 +4,8 @@ using AutoMapper;
 using Core.Application;
 using Filters;
 using Infrastructure.Registrations;
+using Infrastructure.Extensions;
+using Infrastructure.Factories;
 using Infrastructure.Repositories.Sqlite;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -27,6 +29,8 @@ namespace API
             services.AddInfrastructureServices(Configuration);
             services.AddApplicationServices();
 
+            services.AddConfiguredDataBase(Configuration);
+
             services.AddApiVersioning(options =>
             {
                 options.DefaultApiVersion = new ApiVersion(1, 0);
@@ -34,7 +38,7 @@ namespace API
                 options.ReportApiVersions = true;
             });
 
-            services.AddDbContext<StoreDbContext>(options => options.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
+            //services.AddDbContext<StoreDbContext>(options => options.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
            
             services.AddSwaggerGen(c =>
             {
@@ -59,7 +63,7 @@ namespace API
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
-            if (env.IsDevelopment() || env.IsProduction())
+            if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
 
