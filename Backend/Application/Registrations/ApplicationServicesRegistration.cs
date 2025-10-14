@@ -28,6 +28,8 @@ namespace Application.Registrations
             services.AddScoped<IAlumnoApplicationService, AlumnoApplicationService>();
 
             services.AddTransient<AutomovilApplicationService>();
+            services.AddTransient<AlumnoApplicationService>();
+            services.AddTransient<IGameApplicationService, GameApplicationService>();
 
 
             return services;

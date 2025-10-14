@@ -33,7 +33,7 @@ namespace Infrastructure.Factories
 
         private static IServiceCollection AddSqliteRepositories(this IServiceCollection services, IConfiguration configuration)
         {
-            services.AddDbContext<Repositories.Sql.StoreDbContext>(options =>
+            services.AddDbContext<Repositories.Sqlite.StoreDbContext>(options =>
             {
                 options.UseSqlite(configuration.GetConnectionString("DefaultConnection"));
             }, ServiceLifetime.Scoped);
@@ -41,6 +41,10 @@ namespace Infrastructure.Factories
             // Sqlite Repositories (usa los mismos que SQL porque es EF Core)
             services.AddTransient<IDummyEntityRepository, Repositories.Sql.DummyEntityRepository>();
             services.AddTransient<IAlumnoRepository, Repositories.Sql.AlumnoRepository>();
+            services.AddTransient<IAutomovilRepository, Repositories.Sql.AutomovilRepository>();
+            services.AddTransient<IAttemptRepository, Repositories.Sqlite.AttemptRepository > ();
+            services.AddTransient<IGameRepository, Repositories.Sqlite.GameRepository>();
+            services.AddTransient<IPlayerRepository, Repositories.Sqlite.PlayerRepository>();
 
             return services;
         }
@@ -59,6 +63,7 @@ namespace Infrastructure.Factories
             // Sql Repositories
             services.AddTransient<IDummyEntityRepository, Repositories.Sql.DummyEntityRepository>();
             services.AddTransient<IAlumnoRepository, Repositories.Sql.AlumnoRepository>();
+            services.AddTransient<IAutomovilRepository, Repositories.Sql.AutomovilRepository>();
 
             return services;
         }
@@ -71,7 +76,9 @@ namespace Infrastructure.Factories
             services.AddSingleton(typeof(Repositories.Mongo.StoreDbContext), db);
 
             // MongoDb Repositories
-            services.AddTransient<IDummyEntityRepository, Repositories.Mongo.DummyEntityRepository>();
+            services.AddTransient<IDummyEntityRepository, Repositories.Sql.DummyEntityRepository>();
+            services.AddTransient<IAlumnoRepository, Repositories.Sql.AlumnoRepository>();
+            services.AddTransient<IAutomovilRepository, Repositories.Sql.AutomovilRepository>();
 
             return services;
         }

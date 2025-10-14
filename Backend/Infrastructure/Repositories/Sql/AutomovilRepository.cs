@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Application.Repositories;
+using Core.Infraestructure.Repositories.Sql;
 using Domain.Entities;
-using Application.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 

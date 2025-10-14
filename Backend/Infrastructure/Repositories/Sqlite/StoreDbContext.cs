@@ -16,6 +16,8 @@ namespace Infrastructure.Repositories.Sqlite
         {
         }
         public DbSet<Automovil> Automoviles { get; set; }
+        public DbSet<Game> Games { get; set; }
+        public DbSet<Attempt> Attempts { get; set; }
 
 
         protected StoreDbContext()
@@ -39,6 +41,20 @@ namespace Infrastructure.Repositories.Sqlite
             modelBuilder.Entity<Automovil>()
                 .HasIndex(a => a.NumeroChasis)
                 .IsUnique();
+
+            modelBuilder.Entity<Game>().ToTable("Games");
+            modelBuilder.Entity<Attempt>().ToTable("Attempts");
+
+            modelBuilder.Entity<Game>()
+                .HasMany(g => g.Attempts)
+                .WithOne(a => a.Game)
+                .HasForeignKey(a => a.GameId);
+
+            modelBuilder.Entity<Game>()
+                .HasOne(g => g.Player)
+                .WithMany(p => p.Games)
+                .HasForeignKey(g => g.PlayerId);
+
         }
     }
 }

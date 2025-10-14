@@ -1,4 +1,4 @@
-﻿using Application.UseCases.Alumno.Commands.CrearAlumno;
+﻿using Application.UseCases.Player.Commands.CrearAlumno;
 using Core.Application;
 using Domain.Entities;
 using Microsoft.AspNetCore.Mvc;

@@ -11,7 +11,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.UseCases.Alumno.Commands.CrearAlumno
+namespace Application.UseCases.Player.Commands.CrearAlumno
 {
     internal class CrearAlumnoHandler : IRequestCommandHandler<CrearAlumnoCommand, string>
     {
@@ -38,7 +38,7 @@ namespace Application.UseCases.Alumno.Commands.CrearAlumno
             {
                 object createdId = await _alumnoRepository.AddAsync(entity);
 
-                await _domainBus.Publish(entity.To<AlumnoCreado>(), cancellationToken);
+                await _domainBus.Publish(entity.To<PlayerCreated>(), cancellationToken);
 
                 return createdId.ToString();
             }

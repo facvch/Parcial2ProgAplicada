@@ -15,7 +15,9 @@ namespace Infrastructure.Repositories.Sql
         public StoreDbContext(DbContextOptions<StoreDbContext> options) : base(options)
         {
         }
+
         public DbSet<Automovil> Automoviles { get; set; }
+        public DbSet<Player> Players { get; set; }
 
 
         protected StoreDbContext()

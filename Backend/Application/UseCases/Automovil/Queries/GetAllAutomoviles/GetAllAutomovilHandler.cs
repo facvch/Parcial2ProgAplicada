@@ -11,8 +11,7 @@ using Domain.Entities;
 
 namespace Application.UseCases.Automovil.Queries.GetAllAutomoviles
 {
-    public class GetAllAutomovilHandler 
-        : IRequestHandler<GetAllAutomovilQuery, IEnumerable<Domain.Entities.Automovil>>
+    public class GetAllAutomovilHandler : IRequestHandler<GetAllAutomovilQuery, IEnumerable<Domain.Entities.Automovil>>
     {
         private readonly IAutomovilRepository _repository;
 
@@ -21,9 +20,7 @@ namespace Application.UseCases.Automovil.Queries.GetAllAutomoviles
             _repository = repository;
         }
 
-        public async Task<IEnumerable<Domain.Entities.Automovil>> Handle(
-            GetAllAutomovilQuery request, 
-            CancellationToken cancellationToken)
+        public async Task<IEnumerable<Domain.Entities.Automovil>> Handle(GetAllAutomovilQuery request, CancellationToken cancellationToken)
         {
             return await _repository.GetAllAsync();
         }

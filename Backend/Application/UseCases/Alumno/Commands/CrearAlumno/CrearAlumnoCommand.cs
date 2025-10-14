@@ -1,6 +1,6 @@
 ﻿using Core.Application;
 
-namespace Application.UseCases.Alumno.Commands.CrearAlumno
+namespace Application.UseCases.Player.Commands.CrearAlumno
 {
     public class CrearAlumnoCommand : IRequestCommand<string>
     {

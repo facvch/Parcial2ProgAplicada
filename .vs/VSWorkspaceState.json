@@ -11,7 +11,8 @@
     "\\Backend\\Infrastructure\\Extensions",
     "\\Backend\\Infrastructure\\Registrations",
     "\\Backend\\Infrastructure\\Repositories",
-    "\\Backend\\Infrastructure\\Repositories\\Sql"
+    "\\Backend\\Infrastructure\\Repositories\\Sql",
+    "\\Backend\\Infrastructure\\Repositories\\Sqlite"
   ],
   "SelectedNode": "\\Backend\\HybridDDDArchitecture.sln",
   "PreviewInSolutionExplorer": false

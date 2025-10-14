@@ -17,6 +17,9 @@ namespace Filters
             response.StatusCode = (int)GetErrorCode(context.Exception.GetType());
             response.ContentType = "application/json";
 
+            var exception = context.Exception;
+            Console.WriteLine($"[ERROR] {exception.GetType().Name}: {exception.Message}\n{exception.StackTrace}");
+
             string resultMessage = context.Exception.Message;
             string errorCode = Guid.NewGuid().ToString();
 

@@ -1,12 +1,13 @@
 ﻿using Application;
 using Application.Registrations;
+using Application.Repositories;
 using AutoMapper;
 using Core.Application;
 using Filters;
-using Infrastructure.Registrations;
 using Infrastructure.Extensions;
 using Infrastructure.Factories;
-using Infrastructure.Repositories.Sqlite;
+using Infrastructure.Registrations;
+using Infrastructure.Repositories;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -37,8 +38,6 @@ namespace API
                 options.AssumeDefaultVersionWhenUnspecified = true;
                 options.ReportApiVersions = true;
             });
-
-            //services.AddDbContext<StoreDbContext>(options => options.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
            
             services.AddSwaggerGen(c =>
             {

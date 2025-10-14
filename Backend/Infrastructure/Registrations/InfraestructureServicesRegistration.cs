@@ -4,6 +4,7 @@ using Core.Infraestructure;
 using Domain.Others.Utils;
 using Infrastructure.Constants;
 using Infrastructure.Factories;
+using Infrastructure.Repositories.Sqlite;
 using Infrastructure.Repositories.Sql;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -21,16 +22,20 @@ namespace Infrastructure.Registrations
     {
         public static IServiceCollection AddInfrastructureServices(this IServiceCollection services, IConfiguration configuration)
         {
-            /* Database Context */
+            // Database Context
             services.AddRepositories(configuration);
 
-            /* EventBus */
+            // EventBus
             services.AddEventBus(configuration);
 
-            /* Repository */
+            // Repository
             services.AddTransient<IAutomovilRepository, AutomovilRepository>();
+            services.AddTransient<IPlayerRepository, PlayerRepository>();
+            services.AddTransient<IGameRepository, GameRepository>();
+            services.AddTransient<IAttemptRepository, AttemptRepository>();
 
-            /* Adapters */
+
+            // Adapters
             services.AddSingleton<IExternalApiClient, ExternalApiHttpAdapter>();
 
             return services;
