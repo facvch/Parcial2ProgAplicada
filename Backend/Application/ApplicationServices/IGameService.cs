@@ -1,6 +1,6 @@
 ﻿using Application.DataTransferObjects;
 
-namespace Domain.DomainServices
+namespace Application.ApplicationServices
 {
     public interface IGameService
     {
