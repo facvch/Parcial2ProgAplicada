@@ -2,7 +2,7 @@
 using Application.Registrations;
 using AutoMapper;
 using Core.Application;
-using Domain.DomainServices;
+using Application.ApplicationServices;
 using Filters;
 using Infrastructure.Extensions;
 using Infrastructure.Factories;
@@ -67,6 +67,23 @@ namespace API
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            using (var scope = app.ApplicationServices.CreateScope())
+            {
+                var context = scope.ServiceProvider.GetRequiredService<Infrastructure.Repositories.Sql.StoreDbContext>();
+
+                // Forzar la creación de la base de datos SQLite
+                try
+                {
+                    Console.WriteLine("Creando base de datos SQLite...");
+                    context.Database.EnsureCreated();
+                    Console.WriteLine("Base de datos creada exitosamente.");
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Error creando base de datos: {ex.Message}");
+                }
+            }
+
             // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
             if (env.IsDevelopment())
             {

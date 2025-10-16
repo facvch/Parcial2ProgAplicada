@@ -5,6 +5,7 @@ using ESCMB;
 using Infrastructure.Repositories.Sql;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using GameCore;
 
 namespace Infrastructure.Services
 {

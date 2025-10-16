@@ -16,10 +16,6 @@
   </ItemGroup>
 
   <ItemGroup>
-	<Compile Remove="Migrations\DeprecatedMigrations\**\*.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Folder Include="Adapters\" />
   </ItemGroup>
 
