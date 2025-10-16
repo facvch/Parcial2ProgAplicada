@@ -2,11 +2,13 @@
 using Application.Registrations;
 using AutoMapper;
 using Core.Application;
+using Domain.DomainServices;
 using Filters;
-using Infrastructure.Registrations;
 using Infrastructure.Extensions;
 using Infrastructure.Factories;
-using Infrastructure.Repositories.Sqlite;
+using Infrastructure.Registrations;
+using Infrastructure.Repositories.Sql;
+using Infrastructure.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -30,6 +32,9 @@ namespace API
             services.AddApplicationServices();
 
             services.AddConfiguredDataBase(Configuration);
+
+            services.AddScoped<IGameService, GameService>();
+            services.AddScoped<BaseExceptionFilter>();
 
             services.AddApiVersioning(options =>
             {

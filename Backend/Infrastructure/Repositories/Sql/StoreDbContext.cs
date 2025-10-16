@@ -11,21 +11,27 @@ namespace Infrastructure.Repositories.Sql
     {
         //public DbSet<DummyEntity> DummyEntity { get; set; }
         public DbSet<Alumno> Alumno { get; set; }
+        public DbSet<Automovil> Automoviles { get; set; }
+        public DbSet<Player> Players { get; set; }
+        public DbSet<Game> Games { get; set; }
+        public DbSet<Attempt> Attempts { get; set; }
+
 
         public StoreDbContext(DbContextOptions<StoreDbContext> options) : base(options)
         {
         }
-        public DbSet<Automovil> Automoviles { get; set; }
-
+        
 
         protected StoreDbContext()
         {
         }
 
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);
         }
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -39,6 +45,34 @@ namespace Infrastructure.Repositories.Sql
             modelBuilder.Entity<Automovil>()
                 .HasIndex(a => a.NumeroChasis)
                 .IsUnique();
+
+            modelBuilder.Entity<Player>(entity =>
+            {
+                entity.HasKey(p => p.PlayerId);
+                entity.Property(p => p.FirstName).IsRequired().HasMaxLength(100);
+                entity.Property(p => p.LastName).IsRequired().HasMaxLength(100);
+                entity.Property(p => p.RegistrationDate).IsRequired();
+            });
+
+            modelBuilder.Entity<Game>(entity =>
+            {
+                entity.HasKey(g => g.GameId);
+                entity.HasOne(g => g.Player)
+                      .WithMany(p => p.Games)
+                      .HasForeignKey(g => g.PlayerId);
+                entity.Property(g => g.SecretNumber).IsRequired().HasMaxLength(4);
+                entity.Property(g => g.CreatedAt).IsRequired();
+            });
+
+            modelBuilder.Entity<Attempt>(entity =>
+            {
+                entity.HasKey(a => a.AttemptId);
+                entity.HasOne(a => a.Game)
+                      .WithMany(g => g.Attempts)
+                      .HasForeignKey(a => a.GameId);
+                entity.Property(a => a.AttemptedNumber).IsRequired().HasMaxLength(4);
+                entity.Property(a => a.AttemptDate).IsRequired();
+            });
         }
     }
 }

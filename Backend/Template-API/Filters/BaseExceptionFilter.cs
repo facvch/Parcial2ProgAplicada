@@ -10,8 +10,18 @@ namespace Filters
     /// </summary>
     public class BaseExceptionFilter : IExceptionFilter
     {
+        private readonly ILogger<BaseExceptionFilter> _logger;
+
+        public BaseExceptionFilter(ILogger<BaseExceptionFilter> logger)
+        {
+            _logger = logger;
+        }
+
         public void OnException(ExceptionContext context)
         {
+            _logger.LogError(context.Exception, "Excepción no manejada en {Action}",
+            context.ActionDescriptor.DisplayName);
+
             //generamos el mensaje de error
             HttpResponse response = context.HttpContext.Response;
             response.StatusCode = (int)GetErrorCode(context.Exception.GetType());
@@ -29,6 +39,7 @@ namespace Filters
                 StatusCode = response.StatusCode
             });
             context.Result = result;
+            context.ExceptionHandled = true;
         }
 
         private HttpStatusCode GetErrorCode(Type exceptionType)

@@ -1,4 +1,4 @@
-using Infrastructure.Repositories.Sqlite;
+using Infrastructure.Repositories.Sql;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
 using Microsoft.Extensions.Hosting;

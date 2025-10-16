@@ -1,6 +1,8 @@
 ﻿using Application.Repositories;
+using Domain.DomainServices;
 using Domain.Others.Utils;
 using Infrastructure.Constants;
+using Infrastructure.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -41,6 +43,7 @@ namespace Infrastructure.Factories
             // Sqlite Repositories (usa los mismos que SQL porque es EF Core)
             services.AddTransient<IDummyEntityRepository, Repositories.Sql.DummyEntityRepository>();
             services.AddTransient<IAlumnoRepository, Repositories.Sql.AlumnoRepository>();
+            services.AddScoped<IGameService, GameService>();
 
             return services;
         }
